@@ -92,6 +92,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -106,17 +107,21 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -124,10 +129,12 @@ q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 /* reset style ends here */
 
 @font-face {
@@ -156,7 +163,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 65%;
-  background-color: #CBF1F5;
+  background-color: #cbf1f5;
 }
 
 .logo-bar {
@@ -179,6 +186,7 @@ body {
   font-size: 4.5rem;
   margin: 0.5rem;
 }
+
 /* right panel */
 
 .right-side > p {
@@ -187,7 +195,7 @@ body {
   font-size: 1.7rem;
   margin: 20px;
   padding: 7px;
-  color: #3F72AF;
+  color: #3f72af;
 }
 
 .right-side > p:first-child {
@@ -196,12 +204,12 @@ body {
 }
 
 .form-background {
-  background-color: #E3FDFD;
+  background-color: #e3fdfd;
+  box-shadow: 0px 1px 3px #ccc;
 }
 
 .form-holder {
   color: #104b92;
-  /* border-radius: 10px; */
 }
 
 .form-background > h1 {
@@ -224,10 +232,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  
 }
 
-.left-form div , .right-form div {
+.left-form div,
+.right-form div {
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -239,36 +247,39 @@ body {
 }
 
 .form-background input {
-  width: min(16vw,310px);
+  width: min(16vw, 310px);
   height: 26px;
   background-color: #f0fcffd3;
   border-radius: 7px;
   border: 2px solid #ccc;
-
 }
 
-button{
+button {
   max-width: 280px;
-  background-color: #A6E3E9;
+  background-color: #a6e3e9;
   border-radius: 7px;
   margin: 22px 20px 12px 20px;
   padding: 7px;
   font-size: 1.4rem;
-  color: #3F72AF;
-  border: 2px ;
+  color: #3f72af;
+  border: 2px;
 }
 
-button:active{
-  border: 2px solid #3F72AF;
+button:active {
+  border: 2px solid #3f72af;
   margin-bottom: 8px;
 }
 
-.login-line{
+.login-line {
   font-size: 1.2rem;
   margin: 22px 20px;
   color: #104b92;
 }
 
-.email > input:invalid{
+input[type='email']:invalid {
   border: 2px solid red;
-} 
+}
+
+.password-mismatch{
+  color: red;
+}

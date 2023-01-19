@@ -32,7 +32,7 @@
             <fieldset class="left-form">
               <div>
                 <label for="first_name">FIRST NAME</label>
-                <input type="text" name="user_first_name" id="first_name" placeholder="john" />
+                <input type="text" name="user_first_name" id="first_name" placeholder="john" required/>
               </div>
 
               <div class="email">
@@ -42,7 +42,8 @@
 
               <div>
                 <label for="password">PASSWORD</label>
-                <input type="password" name="user_password" id="password" />
+                <input  type="password" name="user_password" id="password" invalid required/>
+                <p class="password-mismatch"></p>
               </div>
             </fieldset>
 
@@ -54,18 +55,18 @@
 
               <div>
                 <label for="phone_number">PHONE NUMBER</label>
-                <input type="number" name="user_phone_number" id="phone_number" placeholder="12345 67890"/>
+                <input type="number" name="user_phone_number" id="phone_number" placeholder="12345 67890" required/>
               </div>
 
               <div>
                 <label for="CNF_password">CONFIRM PASSWORD</label>
-                <input type="password" name="confirm_password" id="CNF_password" />
+                <input type="password" name="confirm_password" id="CNF_password" invalid required/>
               </div>
             </fieldset>
           </form>
         </div>
       </div>
-      <button type="submit" form="login-page">Create Account</button>
+        <button id="btn" type="submit" form="login-page">Create Account</button>  
       <span class="login-line">Already have an account? <a href="http://index.html">Log in</a></span>
     </div>
   </div>
