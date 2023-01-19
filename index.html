@@ -28,16 +28,16 @@
       <div class="form-background">
         <h1>Can I Do It?</h1>
         <div class="form-holder">
-          <form action="" method="get">
+          <form action="" method="get" id="login-page">
             <fieldset class="left-form">
               <div>
                 <label for="first_name">FIRST NAME</label>
-                <input type="text" name="user_first_name" id="first_name" />
+                <input type="text" name="user_first_name" id="first_name" placeholder="john" />
               </div>
 
-              <div>
+              <div class="email">
                 <label for="mail">EMAIL</label>
-                <input type="email" name="user_email" id="mail" />
+                <input type="email" name="user_email" id="mail" placeholder="abc@mail" />
               </div>
 
               <div>
@@ -49,12 +49,12 @@
             <fieldset class="right-form">
               <div>
                 <label for="last_name">LAST NAME</label>
-                <input type="text" name="user_last_name" id="last_name" />
+                <input type="text" name="user_last_name" id="last_name" placeholder="doe"/>
               </div>
 
               <div>
                 <label for="phone_number">PHONE NUMBER</label>
-                <input type="number" name="user_phone_number" id="phone_number" />
+                <input type="number" name="user_phone_number" id="phone_number" placeholder="12345 67890"/>
               </div>
 
               <div>
@@ -65,7 +65,7 @@
           </form>
         </div>
       </div>
-      <button type="submit">Create Account</button>
+      <button type="submit" form="login-page">Create Account</button>
       <span class="login-line">Already have an account? <a href="http://index.html">Log in</a></span>
     </div>
   </div>

@@ -243,7 +243,7 @@ body {
   height: 26px;
   background-color: #f0fcffd3;
   border-radius: 7px;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
 
 }
 
@@ -251,11 +251,16 @@ button{
   max-width: 280px;
   background-color: #A6E3E9;
   border-radius: 7px;
-  border: 2px ;
-  margin: 22px 20px 0 20px;
+  margin: 22px 20px 12px 20px;
   padding: 7px;
   font-size: 1.4rem;
   color: #3F72AF;
+  border: 2px ;
+}
+
+button:active{
+  border: 2px solid #3F72AF;
+  margin-bottom: 8px;
 }
 
 .login-line{
@@ -263,3 +268,7 @@ button{
   margin: 22px 20px;
   color: #104b92;
 }
+
+.email > input:invalid{
+  border: 2px solid red;
+} 
